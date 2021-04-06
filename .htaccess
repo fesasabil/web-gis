@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI} ^/system.*
+RewriteRule ^(.*)$ index.php?/$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)$ index.php?/$1 [L]
+RewriteCond $1 !^(index\.php|img|robots\.txt)
+php_value max_input_vars 10000
