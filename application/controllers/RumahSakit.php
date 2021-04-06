@@ -43,7 +43,7 @@ class RumahSakit extends CI_Controller
 			$row[] = $rumahsakit->rumahsakit_long;
 
 			//add html for action
-			$row[] = '<a class="btn btn-sm btn-primary" href="javascript:void(0)" title="Maps" onclick="rumahsakit_map('."'".$rumahsakit->id."'".')"><i class="glyphicon glyphicon-globe"></i> Maps</a>';
+			// $row[] = '<a class="btn btn-sm btn-primary" href="javascript:void(0)" title="Maps" onclick="rumahsakit_map('."'".$rumahsakit->id."'".')"><i class="glyphicon glyphicon-globe"></i> Maps</a>';
 		
 			$data[] = $row;
 		}

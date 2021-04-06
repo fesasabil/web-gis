@@ -64,7 +64,7 @@
                     <th>Nama Rumah Sakit</th>
                     <th>Lat Rumah Sakit</th>
                     <th>Long Rumah Sakit</th>
-                    <th style="width:125px;">Action</th>
+                    <!-- <th style="width:125px;">Action</th> -->
                 </tr>
             </thead>
             <tbody>
@@ -109,6 +109,35 @@
           .openPopup();
         });
       });
+
+      // MENAMBAHKAN TOOL PENCARIAN
+  // var searchControl = new L.Control.Search({
+  //   layer: layer_ADMINISTRASI, // ISI DENGAN ANAM VARIABEL LAYER
+  //   propertyName: 'kab_kot', // isi dengan nama field dari file geojson bali yang akan dijadiakn acuan ketiak melakukan pencarian
+  //   HidecircleLocation: false,
+  //   moveToLocation: function(latlng, title, map) {
+  //     //map.fitBounds( latlng.layer.getBounds() );
+  //     var zoom = map.getBoundsZoom(latlng.layer.getBounds());
+  //       map.setView(latlng, zoom); // access the zoom
+  //   }
+  // });
+
+  // searchControl.on('search:locationfound', function(e) {
+    
+  //   e.layer.setStyle({});
+  //   if(e.layer._popup)
+  //     e.layer.openPopup();
+
+  // }).on('search:collapsed', function(e) {
+
+  //   featuresLayer.eachLayer(function(layer) {
+  //     featuresLayer.resetStyle(layer);
+  //   }); 
+  // });
+  
+  // map.addControl( searchControl );  //menambahakn tool pencarian ke tampilan map
+  // // menambahkan tools defautl extent
+  // L.control.defaultExtent().addTo(map);
 
 
     $(document).ready(function() {
