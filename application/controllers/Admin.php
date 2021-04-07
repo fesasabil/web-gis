@@ -20,15 +20,6 @@ class Admin extends CI_Controller
 		$this->page = $this->input->get('page');
 	}
 
-	// public function index()
-	// {
-	// 	$this->data = array(
-	// 		'title' => "Home Administrator"
-	// 	);	
-
-	// 	$this->load->view('main-admin', $this->data);
-	// }
-
 	public function addhospital()
 	{	
 		$this->data['title'] = "Add Hospital";
